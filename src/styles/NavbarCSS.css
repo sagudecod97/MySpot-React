@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #627264;
+}
+
+.logo {
+    text-align: center;
+    width: 30%;
+}
+
+.logo img {
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    height: 100%;
+    width: 50%;
+}
+
+.navbar {
+    display: flex;
+    width: 70%;
+}
+
+.container-list {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container-list .list li {
+    margin: 0;
+    padding: 0;
+}
+
+.container-list .list li:hover {
+    color: #000;
+}
+
+.container-loggin {
+    width: 30%;
+}
+
+.loggin {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.loggin-btn {
+    padding-top: 8%;
+}
+.loggin-btn button {
+    font-size: medium;
+    background-color: whitesmoke;
+    border-color: #D8E2DC;
+    border-radius: 10%;
+    height: 120%;
+    width: 110%;
+    color:  #1B2021;
+    font-weight: bold;
+}
+.loggin-btn button:hover {
+    opacity: 90%;
+}
+
+.loggin-btn-out {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.loggin-btn-out button{
+    font-size: medium;
+    background-color: whitesmoke;
+    border-color: #D8E2DC;
+    border-radius: 10%;
+    height: 120%;
+    width: 110%;
+    color:  #1B2021;
+    font-weight: bold;
+}
+.loggin-btn-out button:hover {
+    opacity: 90%;
+}
+
+.banner {
+    margin-top: 0;
+    padding-left: 5%;
+    background-color: white;
+    height: 25px;
+}
+.banner p {
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+}
+
+.line {
+    width: 120px;
+    height: 3px;
+    background-color: #FFF;
+}
