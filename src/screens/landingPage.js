@@ -1,11 +1,18 @@
 import React from 'react'
 
-import Map from '../assets/Mapa.PNG'
+import '../styles/LandingPageCSS.css'
+import Map from '../assets/Mapa-iphone-stores.PNG'
 
 const LandingPage = () => {
     return (
-        <div>
-            <img src={Map} alt='MySpot Mobile App'/>
+        <div className='container-map'>
+            <h1 className='text-map'>MySpot  ¡Parqueo fácil!</h1>
+            <p className='text-landing'>
+                Descarga la applicación movil de MySpot completamente<br/> gratis y comienza a disfrutar
+                de todos los beneficios <br/> de acceder al servicio de parqueadero sin <br/>
+                complicaciones, ni preocupaciones.
+            </p>
+            <img className='map' src={Map} alt='MySpot Mobile App'/>
         </div>
     )
 }

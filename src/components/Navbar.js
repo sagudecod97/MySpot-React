@@ -15,7 +15,7 @@ class Navbar extends Component {
         return (
             <div>
                 <div className='banner'>
-                    <p>¡Tu primera opción en parqueo!</p>
+                    <strong><p>¡Tu primera opción en parqueo!</p></strong>
                 </div>
                 <div className='container'>
                     <div className='navbar'>
@@ -37,7 +37,7 @@ class Navbar extends Component {
                             !this.state.isLogged ? 
                             <div className='loggin'>
                                 <div className='loggin-btn'>
-                                    <button>Resgistrarse</button>
+                                    <button >Resgistrarse</button>
                                 </div>
                                 <div className='loggin-btn'>
                                     <button>Ingresar</button>
