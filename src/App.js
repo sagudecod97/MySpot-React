@@ -19,10 +19,12 @@ class App extends Component {
                 <div className='app-container'>
                     <Navbar />
                     <div className='main'>
-                        <Route path='/' exact component={LandingPage}/>
-                        <Route path='/about-myspot' component={MySpotAbout}/>
-                        <Route path='/parking-lots' component={ParkingLots}/>
-                        <Route  path='/devs' component={Developers}/>
+                        <Switch>
+                            <Route path='/' exact component={LandingPage}/>
+                            <Route path='/about-myspot' component={MySpotAbout}/>
+                            <Route path='/parking-lots' component={ParkingLots}/>
+                            <Route  path='/devs' component={Developers}/>
+                        </Switch>
                     </div>
                     <Footer />
                 </div>

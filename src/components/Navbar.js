@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import '../styles/NavbarCSS.css'
 import MySpotLogo from '../assets/Logo myspot-01.png'
+
+const linkStyle = {
+    textDecoration: 'none',
+    color: '#FFFFFF'
+}
 
 
 class Navbar extends Component {
@@ -13,7 +20,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div>
+            <div className='container-navbar'>
                 <div className='banner'>
                     <strong><p>¡Tu primera opción en parqueo!</p></strong>
                 </div>
@@ -24,10 +31,10 @@ class Navbar extends Component {
                         </div>
                         <div className='container-list'>
                             <ul className='list'>
-                                <li>Inicio</li>
-                                <li>Acerca de MySpot</li>
-                                <li>Parqueaderos</li>
-                                <li>Devs</li>   
+                                <Link style={linkStyle} to='/'><li>Inicio</li></Link>
+                                <Link style={linkStyle} to='/about-myspot'><li>Acerca de MySpot</li></Link>
+                                <Link style={linkStyle} to='/parking-lots'><li>Parqueaderos</li></Link>
+                                <Link style={linkStyle} to='/devs'><li>Devs</li></Link>
                             </ul>
                         </div>
                     </div>

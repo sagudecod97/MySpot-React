@@ -1,0 +1,43 @@
+.container-devs {
+    margin-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.image-dev {
+    height: 100%;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.description-dev {
+    padding-top: 3%;
+    padding-left: 6%;
+    width: 60%;
+}
+.description-dev p {
+    font-size: 20px;
+}
+
+
+.container-networks {
+    width: 100%;
+}
+.list-networks {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.list-networks li {
+    margin-left: 5%;
+}
+.list-networks li a {
+    color: #000000;
+}

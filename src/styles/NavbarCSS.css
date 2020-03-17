@@ -1,3 +1,8 @@
+
+.container-navbar {
+    position: sticky;
+    top: 0;
+}
 .container {
     display: flex;
     width: 100%;
@@ -41,6 +46,7 @@
 .container-list .list li {
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 
 .container-list .list li:hover {
