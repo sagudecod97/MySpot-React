@@ -11,6 +11,8 @@ import LandingPage from './screens/landingPage'
 import MySpotAbout from './screens/mySpotAbout'
 import ParkingLots from './screens/parkingLots'
 import Developers from './screens/developers'
+import SignUp from './screens/formSignUp'
+import Login from './screens/formLogin'
 
 class App extends Component {
     render() {
@@ -21,6 +23,8 @@ class App extends Component {
                     <div className='main'>
                         <Switch>
                             <Route path='/' exact component={LandingPage}/>
+                            <Route path='/sign-up' component={SignUp}/>
+                            <Route path='/login' component={Login} />
                             <Route path='/about-myspot' component={MySpotAbout}/>
                             <Route path='/parking-lots' component={ParkingLots}/>
                             <Route  path='/devs' component={Developers}/>

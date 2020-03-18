@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import '../styles/developersCSS.css'
 
 import minSantiPhoto from '../assets/SAA-MiniFotoBigger.png'
-import minThomasPhoto from '../assets/TM-Foto.png'
+import minThomasPhoto from '../assets/TM-Bigger-Foto.png'
 
 class Developers extends Component {
     render() {

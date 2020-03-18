@@ -9,6 +9,11 @@ const linkStyle = {
     color: '#FFFFFF'
 }
 
+const linkStyleBtn = {
+    textDecoration: 'none',
+    color: '#000000'
+}
+
 
 class Navbar extends Component {
     constructor() {
@@ -44,10 +49,10 @@ class Navbar extends Component {
                             !this.state.isLogged ? 
                             <div className='loggin'>
                                 <div className='loggin-btn'>
-                                    <button >Resgistrarse</button>
+                                    <button><Link style={linkStyleBtn} to='/sign-up'>Resgistrarse</Link></button>
                                 </div>
                                 <div className='loggin-btn'>
-                                    <button>Ingresar</button>
+                                    <button><Link style={linkStyleBtn} to='/login'>Ingresar</Link></button>
                                 </div>
                             </div> :
                             <div className='loggin'>

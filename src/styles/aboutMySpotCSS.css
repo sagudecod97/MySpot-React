@@ -39,3 +39,17 @@
 .links {
     color: #000000;
 }
+
+.resources-container {
+    width: 100%;
+    display: flex;
+}
+
+.resources-text {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 70%;
+    margin-left: 13%;
+    font-size: 20px;
+    text-align: justify;
+}

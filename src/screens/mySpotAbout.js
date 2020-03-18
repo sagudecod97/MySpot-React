@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import '../styles/aboutMySpotCSS.css'
 import pMySpot from '../assets/P-MySPOT.png'
 
+
 class MySpotAbout extends Component {
     render() {
         return (
@@ -30,12 +31,15 @@ class MySpotAbout extends Component {
                     <hr />
                 </div>
 
-                <div>
-                    <h2>MySpot Recursos</h2>
+                <div style={{width: '100%', display: 'flex', justifyContent: 'center', paddingRight: '13%' }}>
+                    <div>
+                        <h2>MySpot Recursos</h2>
+                    </div>
                 </div>
 
-                <div className='why' style={{marginBottom: "10%"}}>
-                    <div className='text-why'>
+                <div className='resources-container' style={{marginBottom: "10%"}}>
+
+                    <div className='resources-text'>
                         <p>
                             <strong><a className='links' href='https://github.com/sagudecod97/MySpot---API'>REST API</a>: </strong> 
                             RESTful API creada para recibir y responder todas las peticiones hechas por la aplicación.<br/>
