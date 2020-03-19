@@ -54,3 +54,24 @@ label {
 .signup-btn button:hover {
     opacity: 70%;
 }
+
+/* Errors */
+
+.submit {
+    color: red;
+    margin-top: 0px;
+    margin-left: -10%;
+    font-size: 15px;
+}
+
+.input-err {
+    margin-top: 0px;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    width: 100%;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

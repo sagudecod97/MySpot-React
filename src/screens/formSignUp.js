@@ -25,11 +25,12 @@ class SignUp extends Component {
 
     inputHandler(event) {
         const { name, value } = event.target
-        this.setState( prevState => {
-            prevState.user[name] = value
-            
+        this.setState( prevState => {            
             if (name === 'email') {
                 prevState.userName = value
+                prevState.email = value
+            } else if(name !== 'userName') {
+                prevState.user[name] = value
             }
 
             return {
@@ -56,9 +57,23 @@ class SignUp extends Component {
             return this.setState({ isVisible: true, nameErr: 'lastName'})
         } else if (submitObj.phone.length !== 10) {
             return this.setState({ isVisible: true, nameErr: 'phone'})
+        } else if (/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/g.test(submitObj.email) === false) {
+            return this.setState({ isVisible: true, nameErr: 'email'})
+        } else if (submitObj.password.length < 6) {
+            return this.setState({ isVisible: true, nameErr: 'password'})
         }
 
+        console.log(this.state.user)
         this.setState({ isVisible: false, nameErr: false })
+        fetch('http://18.233.97.235:3000/api/v1/user-signup/', {
+            body: JSON.stringify(this.state.user),
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(data => data.json())
+        .then(data => console.log(data))
     }
 
     render() {
@@ -122,7 +137,7 @@ class SignUp extends Component {
                             this.state.isVisible && this.state.nameErr === 'email' ? 'input-err' : 'hidden'
                         }
                         >
-                            Nombre debe ser menor a 40 caracteres
+                            Debe ser un email correcto
                         </p>
 
                         <label>Contraseña: </label>
@@ -137,7 +152,7 @@ class SignUp extends Component {
                             this.state.isVisible && this.state.nameErr === 'password' ? 'input-err' : 'hidden'
                         }
                         >
-                            Nombre debe ser menor a 40 caracteres
+                            La contraseña debe tener más de 6 caracteres
                         </p>
 
                     </form>

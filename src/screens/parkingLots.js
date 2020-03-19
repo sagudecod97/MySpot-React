@@ -15,7 +15,7 @@ class ParkingLots extends Component {
                     <div>
                         <p className='text-title'>
                             ¡Solamente ingresa la direccion que deseas y haz click en el
-                            parquedero que quieras!
+                            parquedero que prefieras!
                         </p>
                     </div>
                 </div>
